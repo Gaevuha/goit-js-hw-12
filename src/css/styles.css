@@ -9,48 +9,48 @@
 @import url('./base.css');
 
 .form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 36px auto 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 36px auto 32px;
 }
 
 input {
-  margin: 0;
-  padding: 8px 16px;
-  width: 272px;
-  height: 40px;
-  border: 1px solid #808080;
-  border-radius: 4px;
-  font-size: 16px;
-  letter-spacing: 0.04em;
-  color: #808080;
+    margin: 0;
+    padding: 8px 16px;
+    width: 272px;
+    height: 40px;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: #808080;
 }
 
 input:hover {
-  border-color: #000;
+    border-color: #000;
 }
 input:focus {
-  border-color: #4e75ff;
-  outline: none;
+    border-color: #4e75ff;
+    outline: none;
 }
 
 
 button {
-  margin-left: 8px;
-  border-radius: 8px;
-  padding: 8px 16px;
-  width: 91px;
-  height: 40px;
-  background-color: #4e75ff;
-  border: none;
-  font-size: 16px;
-  letter-spacing: 0.04em;
-  color: #fff;
+    margin-left: 8px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 91px;
+    height: 40px;
+    background-color: #4e75ff;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: #fff;
 }
 
 button:hover {
-  background-color: #6c8cff;
+    background-color: #6c8cff;
 }
 
 .loader {
@@ -66,15 +66,7 @@ button:hover {
     animation: 1s rotate linear infinite;
  }
 
-/* .loader.is-visible {
-  display: inline-block;
-} */
-
-/* .loader.is-hidden {
-  display: none;
-} */
-
- .loader:before , .loader:after{
+.loader:before , .loader:after{
     content: '';
     top: 0;
     left: 0;
@@ -92,63 +84,77 @@ button:hover {
   }
 
 .gallery {
-  margin: 0 auto;
-  width: 1128px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px
+    margin: 0 auto;
+    width: 1128px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px
 }
 
 .gallery-item { 
-  height: 200px;
-  width: calc((100% - 48px) / 3);
-  position: relative;
-  border: 1px solid #808080;
+    height: 200px;
+    width: calc((100% - 48px) / 3);
+    position: relative;
+    border: 1px solid #808080;
 }
 
 .gallery img {
-   height: 100%;
-   width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .info {
-  position: absolute;
-  left: 0;
-  top: 142px;
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
-  gap: 28px;
-  padding: 4px 25px 4px 20px;
-  background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 142px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap: 28px;
+    padding: 4px 25px 4px 20px;
+    background-color: #fff;
 }
 
 .info b {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
-  color: #2e2f42;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
 }
 
 .info p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  color: #2e2f42;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
 }
 
+.btn.is-visible {
+    display: block;
+    margin: 0 auto;
+    width: 125px; 
+}
 
 .is-hidden {
-  display: none;
+    display: none;
 }
 
-.is-visible {
-  display: block;
-  margin: 0 auto;
-  margin-top: 32px;
-  width: 125px;
+.wrap-btn-loader {
+    margin-top: 32px;
+    position: relative;
 }
+.loader.is-visible {
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+
+
