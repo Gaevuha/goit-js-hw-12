@@ -8,6 +8,12 @@ p {
   margin: 0;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 p:last-child {
   margin-bottom: 0;
 }

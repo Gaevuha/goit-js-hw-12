@@ -7,12 +7,148 @@
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 36px auto 32px;
+}
+
+input {
+  margin: 0;
+  padding: 8px 16px;
+  width: 272px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #808080;
+}
+
+input:hover {
+  border-color: #000;
+}
+input:focus {
+  border-color: #4e75ff;
+  outline: none;
+}
+
+
+button {
+  margin-left: 8px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 91px;
+  height: 40px;
+  background-color: #4e75ff;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #6c8cff;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    display: none;
+    position: fixed;
+    left: 50%;
+    border: 3px solid;
+    border-color:#de3500 #0000 #808080 #0000;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: 1s rotate linear infinite;
+ }
+
+/* .loader.is-visible {
+  display: inline-block;
+} */
+
+/* .loader.is-hidden {
+  display: none;
+} */
+
+ .loader:before , .loader:after{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom-color:#808080;
+    transform: translate(-10px, 19px) rotate(-35deg);
+  }
+ .loader:after {
+    border-color: #de3500 #0000 #0000 #0000 ;
+    transform: translate(32px, 3px) rotate(-35deg);
+  }
+   @keyframes rotate {
+    100%{    transform: rotate(360deg)}
+  }
+
+.gallery {
+  margin: 0 auto;
+  width: 1128px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px
+}
+
+.gallery-item { 
+  height: 200px;
+  width: calc((100% - 48px) / 3);
+  position: relative;
+  border: 1px solid #808080;
+}
+
+.gallery img {
+   height: 100%;
+   width: 100%;
+}
+
+.info {
+  position: absolute;
+  left: 0;
+  top: 142px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 4px 25px 4px 20px;
+  background-color: #fff;
+}
+
+.info b {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.info p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+
+.is-hidden {
+  display: none;
+}
+
+.is-visible {
+  display: block;
+  margin: 0 auto;
+  margin-top: 32px;
+  width: 125px;
+}
